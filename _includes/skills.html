@@ -1,0 +1,15 @@
+<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Recent Skills</h2>
+
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+  Tools and technologies I've made extensive use of in the recent past.
+</p>
+
+<div class="gutter-condensed mb-4">
+  {% for group in site.skill_groups %}
+    <div class="mb-2">
+      {% for skill in group %}
+        <span class="m-2 State">{{ skill }}</span>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>

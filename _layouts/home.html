@@ -12,6 +12,12 @@
       {% include projects.html %}
     </div>
 
+    {% if site.skill_groups %}
+      <div class="my-6">
+        {% include skills.html %}
+      </div>
+    {% endif %}
+
     {% if site.topics %}
       <div class="my-6">
         {% include interests.html %}
