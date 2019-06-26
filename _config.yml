@@ -1,5 +1,5 @@
-layout: sidebar
-style: light
+layout: stacked
+style: dark
 
 plugins:
   - jekyll-octicons
@@ -9,24 +9,20 @@ plugins:
 permalink: /:year/:month/:day/:title/
 
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
 
 projects:
   sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
   limit: 9
   exclude:
-    archived: false
-    forks: true
+    archived: true
+    forks: false
     projects:
-    # - repo-name
+      - tomcant.github.io
 
 # social_media:
   # behance: your_username
@@ -46,13 +42,35 @@ projects:
   # website: http://your_website_url
   # youtube: your_username
 
+skill_groups:
+  - - PHP
+    - Symfony
+    - Ruby
+    - Chef
+    - C++
+    - JavaScript
+  - - Docker
+    - Terraform
+    - MySQL
+    - Elasticsearch
+    - Redis
+    - Varnish
+  - - EC2
+    - Lambda
+    - CloudFormation
+    - RDS
+    - API Gateway
+    - S3
+
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: Exercise
+    web_url: https://www.ensofit.co.uk/
+    image_url: https://tomcant.s3-eu-west-1.amazonaws.com/resources/images/ensofit-logo.png
 
-  - name: Web design
+  - name: Chess
+    web_url: https://www.chess.com/member/tomcant
+    image_url: https://tomcant.s3-eu-west-1.amazonaws.com/resources/images/chesscom-logo.png
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: Programming
+    web_url: https://app.codesignal.com/profile/tomcant
+    image_url: https://raw.githubusercontent.com/github/explore/d92924b1d925bb134e308bd29c9de6c302ed3beb/topics/terminal/terminal.png
