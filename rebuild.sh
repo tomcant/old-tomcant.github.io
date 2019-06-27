@@ -1,4 +1,13 @@
-curl -X PUT -H "Authorization: token 74212bd9ba78f6ebe67cc51ef6585a49ab4c0ecd" \
+#!/bin/bash
+
+TOKEN=$1
+
+if [[ -z "${TOKEN}" ]]; then
+  echo "Token required. Exiting..."
+  exit 1
+fi
+
+curl -X PUT -H "Authorization: token ${TOKEN}" \
   https://api.github.com/repos/tomcant/tomcant.github.io/contents/.publish -d \
     '{
         "message": "Scripted rebuild",
