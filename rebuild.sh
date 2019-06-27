@@ -1,7 +1,7 @@
 curl -X PUT -H "Authorization: token 74212bd9ba78f6ebe67cc51ef6585a49ab4c0ecd" \
   https://api.github.com/repos/tomcant/tomcant.github.io/contents/.publish -d \
     '{
-        "message": "Rebuild GitHub Pages",
+        "message": "Scripted rebuild",
         "committer": {
             "name": "RebuildBot",
             "email": "rebuildbot@tomcant.dev"
