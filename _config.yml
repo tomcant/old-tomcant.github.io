@@ -22,7 +22,7 @@ projects:
     archived: true
     forks: false
     projects:
-      #- tomcant.github.io
+      - tomcant.github.io
 
 # social_media:
   # behance: your_username
