@@ -23,6 +23,7 @@ projects:
     forks: false
     projects:
       - tomcant.github.io
+      - tideways-daemon-docker
 
 # social_media:
   # behance: your_username
