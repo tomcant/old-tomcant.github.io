@@ -18,16 +18,16 @@ shell: ## Start an interactive shell with access to Ruby/Jekyll.
 .PHONY: publish
 publish: _require_GITHUB_TOKEN ## Trigger a new build/release on GitHub Pages.
 	curl -X PUT -H "Authorization: token ${GITHUB_TOKEN}" \
-      https://api.github.com/repos/tomcant/tomcant.github.io/contents/.publish -d \
-        '{ \
-            "message": "Scripted rebuild", \
-            "committer": { \
-                "name": "RebuildBot", \
-                "email": "rebuildbot@tomcant.dev" \
-            }, \
-            "content": "LnB1Ymxpc2gK", \
-            "sha": "3f949857e8ed4cb106f9744e40b638a7aabf647f" \
-        }'
+	  https://api.github.com/repos/tomcant/tomcant.github.io/contents/.publish -d \
+	  '{ \
+	    "message": "Scripted rebuild", \
+	    "committer": { \
+	      "name": "RebuildBot", \
+	      "email": "rebuildbot@tomcant.dev" \
+	    }, \
+	    "content": "LnB1Ymxpc2gK", \
+	    "sha": "3f949857e8ed4cb106f9744e40b638a7aabf647f" \
+	  }'
 
 _require_%:
 	@_=$(or $($*),$(error "`$*` env var required"))
