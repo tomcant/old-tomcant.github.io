@@ -6,8 +6,6 @@ plugins:
   - jekyll-github-metadata
   - jemoji
 
-permalink: /:year/:month/:day/:title/
-
 defaults:
   - scope:
       path: ""
@@ -16,32 +14,13 @@ defaults:
       layout: "post"
 
 projects:
-  sort_by: pushed
-  limit: 9
-  exclude:
-    archived: true
-    forks: false
-    projects:
-      - tomcant.github.io
-      - tideways-daemon-docker
-
-# social_media:
-  # behance: your_username
-  # dribbble: your_username
-  # facebook: your_username
-  # hackerrank: your_username
-  # instagram: your_username
-  # keybase: your_username
-  # linkedin: your_username
-  # mastodon: your_username
-  # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  # twitter: your_username
-  # unsplash: your_username
-  # vk: your_username
-  # website: http://your_website_url
-  # youtube: your_username
+  repos:
+    - sudoku-solver
+    - tic-tac-toe-ai
+    - tic-tac-toe-reactjs
+    - advent-of-code
+    - http-message
+    - daily-kekich-credo
 
 skill_groups:
   - - PHP
