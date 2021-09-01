@@ -15,9 +15,9 @@ defaults:
 
 projects:
   repos:
+    - path-finder
     - sudoku-solver
     - tic-tac-toe-ai
-    - tic-tac-toe-reactjs
     - advent-of-code
     - http-message
     - daily-kekich-credo
@@ -26,20 +26,20 @@ skill_groups:
   - - PHP
     - Symfony
     - Ruby
-    - Chef
     - C++
-    - JavaScript
+    - TypeScript
+    - React
   - - Docker
     - Terraform
-    - MySQL
+    - PostgreSQL
     - Elasticsearch
     - Redis
     - Varnish
   - - EC2
     - Lambda
-    - CloudFormation
-    - RDS
     - API Gateway
+    - CloudFront
+    - RDS
     - S3
 
 topics:
